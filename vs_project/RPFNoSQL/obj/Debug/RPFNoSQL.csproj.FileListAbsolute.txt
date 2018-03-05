@@ -1,0 +1,5 @@
+F:\project\injector\RPFNoSQL\RPFNoSQL\bin\Debug\RPFNoSQL.dll
+F:\project\injector\RPFNoSQL\RPFNoSQL\bin\Debug\RPFNoSQL.pdb
+F:\project\injector\RPFNoSQL\RPFNoSQL\obj\Debug\RPFNoSQL.csprojResolveAssemblyReference.cache
+F:\project\injector\RPFNoSQL\RPFNoSQL\obj\Debug\RPFNoSQL.dll
+F:\project\injector\RPFNoSQL\RPFNoSQL\obj\Debug\RPFNoSQL.pdb
