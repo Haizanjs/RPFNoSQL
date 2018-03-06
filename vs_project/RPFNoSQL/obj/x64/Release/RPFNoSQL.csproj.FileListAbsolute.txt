@@ -2,3 +2,8 @@ F:\project\injector\RPFNoSQL\RPFNoSQL\bin\x64\Release\RPFNoSQL.dll
 F:\project\injector\RPFNoSQL\RPFNoSQL\bin\x64\Release\RPFNoSQL.pdb
 F:\project\injector\RPFNoSQL\RPFNoSQL\obj\x64\Release\RPFNoSQL.dll
 F:\project\injector\RPFNoSQL\RPFNoSQL\obj\x64\Release\RPFNoSQL.pdb
+F:\project\injector\RPFNoSQL\vs_project\RPFNoSQL\bin\x64\Release\RPFNoSQL.dll
+F:\project\injector\RPFNoSQL\vs_project\RPFNoSQL\bin\x64\Release\RPFNoSQL.pdb
+F:\project\injector\RPFNoSQL\vs_project\RPFNoSQL\obj\x64\Release\RPFNoSQL.csprojResolveAssemblyReference.cache
+F:\project\injector\RPFNoSQL\vs_project\RPFNoSQL\obj\x64\Release\RPFNoSQL.dll
+F:\project\injector\RPFNoSQL\vs_project\RPFNoSQL\obj\x64\Release\RPFNoSQL.pdb

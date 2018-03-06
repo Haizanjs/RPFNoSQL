@@ -23,19 +23,33 @@ public class RPFNoSQL_WriteLogs_ClassContainer
                 Directory.CreateDirectory(TempPathDirectory);
             }
 
-            DateTime datetimenow = new DateTime();
+            DirectoryInfo dirInfo = new DirectoryInfo(TempPathDirectory);
 
-            if (!DirectoryExist(TempPathDirectory + datetimenow.Year.ToString()))
+            DateTime datetime_s = Convert.ToDateTime(DateTime.Now.ToString());
+            string day = datetime_s.Day.ToString();
+            string month = datetime_s.Month.ToString();
+            string year = datetime_s.Year.ToString();
+            string combined = string.Format("{0}-{1}-{2}",day,month,year);
+
+
+            if (!DirectoryExist(TempPathDirectory + combined))
             {
-                Directory.CreateDirectory(TempPathDirectory + datetimenow.Year.ToString());
+                DirectoryInfo dirSub = dirInfo.CreateSubdirectory(combined);
+            }
+
+            if (!File.Exists(TempPathDirectory+combined+combined+".txt"))
+            {
+                File.Create(TempPathDirectory + combined + combined + ".txt");
+                WriteLog(combined,logtype,logdata);
             }
 
             return true;
         }
 
-        public static string WriteLog(string logtype, string logdata)
+        public static bool WriteLog(string path, string logtype, string logdata)
         {
-            return "";
+            // use streamw riter here
+            return true;
         }
 
 

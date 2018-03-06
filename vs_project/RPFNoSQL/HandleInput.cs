@@ -28,6 +28,9 @@ public class RPFNoSQL_HandleInput_ClassContainer
                     case "version":
                         returnMessage = ("RPFNoSQL >> Version >> " + version.ToString());
                         break;
+                    case "writedata":
+                        returnMessage = "writedata test...";
+                        break;
                     default:
                         returnMessage = "RPFNoSQL >> Error >> No arguments passed";
                         break;
