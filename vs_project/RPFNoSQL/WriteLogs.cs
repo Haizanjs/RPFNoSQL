@@ -32,26 +32,28 @@ public class RPFNoSQL_WriteLogs_ClassContainer
             string combined = string.Format("{0}-{1}-{2}",day,month,year);
 
 
-            if (!DirectoryExist(TempPathDirectory + combined))
+            if (!DirectoryExist(TempPathDirectory + year))
             {
-                DirectoryInfo dirSub = dirInfo.CreateSubdirectory(combined);
+                DirectoryInfo dirSub = dirInfo.CreateSubdirectory(year);
             }
 
-            if (!File.Exists(TempPathDirectory+combined+combined+".txt"))
+            string fileDir = string.Format(@"{0}\{1}\{2}.txt",TempPathDirectory,year,combined);
+            if (File.Exists(fileDir))
             {
-                File.Create(TempPathDirectory + combined + combined + ".txt");
-                WriteLog(combined,logtype,logdata);
+                using (TextWriter tw = File.AppendText(fileDir))
+                {
+                    tw.WriteLine(DateTime.Now.ToString() + " : RPFNoSQL >> {" + logtype + "} >> " + logdata);
+                }
+            } else
+            {
+                using (TextWriter tw = new StreamWriter(fileDir))
+                {
+                    tw.WriteLine(DateTime.Now.ToString()+" : RPFNoSQL >> Log file created!");
+                }
             }
 
             return true;
         }
-
-        public static bool WriteLog(string path, string logtype, string logdata)
-        {
-            // use streamw riter here
-            return true;
-        }
-
 
         // Check if directory exists
         public static bool DirectoryExist(string DirectoryPath)

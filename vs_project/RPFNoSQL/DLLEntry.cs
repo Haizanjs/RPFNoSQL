@@ -16,7 +16,7 @@ namespace RPFNoSQL
         public static void RVExtension(StringBuilder output, int outputSize, [MarshalAs(UnmanagedType.LPStr)] string function)
         {
 
-            RPFNoSQL_WriteLogs.HandleLog("SYSTEM", "RPFNoSQL >> Loaded >> Version " + RPFNoSQL_HandleInput.version.ToString());
+            RPFNoSQL_WriteLogs.HandleLog("EXECUTION", "RPFNoSQL >> Input {" + function + "}");
 
             output.Append(RPFNoSQL_HandleInput.InputRequest(function));
         }

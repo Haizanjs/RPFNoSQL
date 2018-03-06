@@ -1,0 +1,1 @@
+copy /y F:\project\injector\RPFNoSQL\vs_project\RPFNoSQL\bin\x64\Release\RPFNoSQL.dll F:\project\injector\RPFNoSQL\vs_project\RPFNoSQL\bin\x64\Release\RPFNoSQL_x64.dll
