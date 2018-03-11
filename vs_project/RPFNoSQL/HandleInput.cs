@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static RPFNoSQL_WriteLogs_ClassContainer;
+using static RPFNoSQL_WriteData_ClassContainer;
 
 public class RPFNoSQL_HandleInput_ClassContainer
 {
@@ -29,7 +30,8 @@ public class RPFNoSQL_HandleInput_ClassContainer
                         returnMessage = ("RPFNoSQL >> Version >> " + version.ToString());
                         break;
                     case "writedata":
-                        returnMessage = "writedata test...";
+                        returnMessage = ("RPFNoSQL >> Write Data >> {"+ splitArgs + "}");
+                        RPFNoSQL_WriteData.HandleData(inputString); 
                         break;
                     default:
                         returnMessage = "RPFNoSQL >> Error >> No arguments passed";
